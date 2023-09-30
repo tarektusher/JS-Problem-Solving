@@ -10,6 +10,5 @@ new_div.className +=' Tarek-div';
 
 
 //? Remove a Existing Class Name from an element using DOM
-// new_div.classList.remove('Tarek-div');
+ new_div.classList.remove('Tarek-div');
 
-new_div.classList.toggle('new-div , Tarek-div');

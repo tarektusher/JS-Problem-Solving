@@ -5,4 +5,4 @@
 # Problem 05 : Write a JavaScript program to add items at starting position and to move a ITEM form one list to another list
 # Problem 06 : Create a Div Element using DOM and Set className for this element and Remove a Existing Class Name from an element using DOM
 # Problem 07 : InnerHTML VS InnerText VS TextContent
-# Problem 08 : 
+# Problem 08 : Remove an Element Using Dom
