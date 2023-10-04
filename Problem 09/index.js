@@ -1,4 +1,5 @@
 
+//? Promise Creating Part 
 const myPromise = new Promise((resolve,reject)=>{
      const num = Math.ceil(Math.random()*100);
      if(num%2==0){
@@ -14,6 +15,7 @@ const myPromise = new Promise((resolve,reject)=>{
      }
 })
 
+///? Creating Part
 const herPromise = new Promise((resolve, reject)=>{
      const val = 10;
      if(val%10 == 0){
@@ -24,6 +26,7 @@ const herPromise = new Promise((resolve, reject)=>{
      }
 })
 
+//? Promise Consuming Part
 herPromise 
      .then((result)=>{
           console.log(result);
@@ -32,6 +35,7 @@ herPromise
           console.error(error);
      })
 
+//? Promise Consuming Part 
 myPromise
      .then((data)=>{
           return JSON.parse(data);
