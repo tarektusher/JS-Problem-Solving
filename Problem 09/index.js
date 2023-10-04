@@ -14,6 +14,24 @@ const myPromise = new Promise((resolve,reject)=>{
      }
 })
 
+const herPromise = new Promise((resolve, reject)=>{
+     const val = 10;
+     if(val%10 == 0){
+          resolve(`She Loves me very much`);
+     }
+     else{
+          reject(`She Loves another person`);
+     }
+})
+
+herPromise 
+     .then((result)=>{
+          console.log(result);
+     })
+     .catch((error) =>{
+          console.error(error);
+     })
+
 myPromise
      .then((data)=>{
           return JSON.parse(data);
@@ -59,3 +77,14 @@ Promise.race([Promise1, Promise2, Promise3, myPromise])
      .catch((error)=>{
           console.log(`::: Promise race`, error);
      })
+
+     const function1 = (callback) => {
+          setTimeout(function() {
+          console.log(`1st Function`);
+          callback();
+          }, 3000)
+          }
+          const function2 = () => {
+          console.log(`2nd Function`);
+          }
+          function1(function2);
