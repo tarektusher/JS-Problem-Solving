@@ -82,13 +82,24 @@ Promise.race([Promise1, Promise2, Promise3, myPromise])
           console.log(`::: Promise race`, error);
      })
 
-     const function1 = (callback) => {
-          setTimeout(function() {
+
+//? Callback Function
+
+const function1 = (callback) => {
+     setTimeout(function() {
           console.log(`1st Function`);
           callback();
-          }, 3000)
-          }
-          const function2 = () => {
-          console.log(`2nd Function`);
-          }
-          function1(function2);
+     }, 3000)
+}
+const function2 = () => {
+     console.log(`2nd Function`);
+}
+function1(function2);
+
+//? Async and Await Part 
+
+const asyncFunc = async() =>{
+     const data = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+     console.log(`::: Asychronous Function Data :::`,data);
+}
+asyncFunc();
