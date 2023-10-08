@@ -7,4 +7,4 @@
 ### Problem 07 : InnerHTML VS InnerText VS TextContent
 ### Problem 08 : Remove an Element Using Dom
 ### Problem 09 : Asynchronous JS
-### Problem 10 : 
+### Problem 10 : Local Storage 
