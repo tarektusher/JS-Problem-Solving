@@ -9,3 +9,4 @@
 ### Problem 09 : Asynchronous JS
 ### Problem 10 : Local Storage 
 ### Problem 11 : JS Object
+### Problem 12 : JS Class

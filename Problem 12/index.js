@@ -1,37 +1,28 @@
-//* Creating Object
-let a = {name : 'Tarek', age : 24};
-let b = {name : 'Tarek', age : 24};
+//* Constructor Function 
+function person(fname,  lname, age){
+    this.fname = fname;
+    this.lname = lname;
+    this.age = age;
+}
+const person1 = new person('Tarek', 'Hossain', 23);
+console.log(person);
+person.prototype.displayName = function(){
+    console.log(`Person Name is ${this.fname} and ${this.lname}`);
+}
 
-//? Comparing Object using JSON.stringfy()
+person1.displayName();
 
-console.log(JSON.stringify(a) == JSON.stringify(b));
-
-//! _.isEqual() is using Lodash Library
-// console.log(_.isEqual(a,b));
-
-
-//? Accessing Object property
-console.log(a.name,a.age);
-//? Another Approach
-console.log(b["name"],b["age"]);
-
-//* Nested Object and Object Method
-
-let stdName = {
-    name : 'Tarek',
-    Id : 33,
-    marks : {
-        JS : 80,
-        CPP : 99,
-        JAVA : 33,
-        C : 90
-    },
-    status : function(){
-        console.log('Tarek is Passed in his semester final');
+//* Class in JS with Constructor 
+class stdName {
+    constructor(fname, lname, age){
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+    }
+    displayName (){
+        console.log(`::: Person Name is ${this.fname} and ${this.lname} :::`);
     }
 }
-console.log(stdName);
-console.log(stdName.marks);
-stdName.status();
 
-
+const student = new stdName("Tarek", "Rahman", 23);
+student.displayName();
